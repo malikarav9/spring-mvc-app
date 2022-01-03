@@ -1,0 +1,111 @@
+
+/* 
+1.Margins are used to create space around elements, outside of any defined borders.
+2.Padding is used to create space around an element's content, inside of any defined borders.
+3.display: inline will display the list content in a single line
+
+4.In this example only <p> elements with class="center" will be red and center-aligned: 
+p.center {
+  text-align: center;
+  color: red;
+}
+
+5.In this example we have grouped the selectors from the code above: 
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+6.The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+7.There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+a)Descendant Selector
+The descendant selector matches all elements that are descendants of a specified element.
+
+The following example selects all <p> elements inside <div> elements:
+
+b)Child Selector (>)
+The child selector selects all elements that are the children of a specified element.
+
+The following example selects all <p> elements that are children of a <div> element:
+
+
+c)
+Adjacent Sibling Selector (+)
+The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+The following example selects the first <p> element that are placed immediately after <div> elements:
+
+
+d)General Sibling Selector (~)
+The general sibling selector selects all elements that are next siblings of a specified element.
+
+The following example selects all <p> elements that are next siblings of <div> elements: 
+
+
+
+ */
+
+
+
+/* list-style-type : none will remove bullets symbol */
+
+body {background-color: #625e62;}
+
+p {
+	margin : 0px 50px 20px 170px;
+	color : white;
+	text-align :justify;
+}
+
+
+ul {
+	list-style-type : none;	
+	margin : 0;
+	padding : 0;
+	overflow: hidden;
+	background-color: #333;
+	
+}
+
+li {
+	/* display : inline;  */
+	float : left;
+}
+
+li a{
+	display: block;
+	padding : 14px 16px;
+	color : white;
+	text-align : center;
+	text-decoration : none;
+	/* remove text-decoration underline from a tag */
+	
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+
+
+
+
+
